@@ -25,4 +25,5 @@ return 0;
 *****************************************
 Function takes default arguments, defined
 in prototype.
+NOTE: C does not have default arguments.
 ****************************************/
