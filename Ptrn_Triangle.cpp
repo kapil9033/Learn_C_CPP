@@ -4,12 +4,8 @@
 #include<string>
 using namespace std;
 
+void print_pattern(string user_in){
 
-int main(){
-	string user_in;
-
-	cout<<"Please enter string: ";
-	cin>>user_in;
 	int inSize=user_in.size();
 
 	for(int rw=0;rw<user_in.size();rw++){
@@ -25,6 +21,20 @@ int main(){
 		 }
 	 }
 	  cout<<endl;
+	}
+	cout<<endl<<endl;
+}
+
+int main(int argc, char *arg[]){
+//arg[0] would be obj filename we compiled and run. 
+	
+
+	//cout<<"Please enter string: ";
+	//cin>>user_in;
+
+	for(int i=1;i<argc;i++){
+		string user_in= arg[i];
+		print_pattern(user_in);
 	}
 
 return 0;
